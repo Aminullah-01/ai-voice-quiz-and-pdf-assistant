@@ -1,0 +1,76 @@
+{
+  "subject": "Computer Science",
+  "timestamp": "20260519_135326",
+  "questions": [
+    {
+      "question": "What is Day 1 Introduction to Cybersecurity What?",
+      "answer": "Cybersecurity?",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Cybersecurity?",
+      "answer": "the practice of protecting systems, networks, devices, and data from unauthorized access, attacks, damage, or theft .What is \u201cCyber\u201d cyber refers to anything related to computers, networks, and digital systems",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Our entire lives?",
+      "answer": "now digital: banking, healthcare, education, entertainment",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Cyber Threads Malware: also unknown as Malicious Software?",
+      "answer": "software that are designed to harm, exploit or damage a computer system",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Operations Security What?",
+      "answer": "Hacking?",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    }
+  ]
+}

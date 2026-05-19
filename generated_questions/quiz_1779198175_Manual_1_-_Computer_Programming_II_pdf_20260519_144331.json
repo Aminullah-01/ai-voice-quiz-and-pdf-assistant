@@ -1,0 +1,115 @@
+{
+  "subject": "Programming",
+  "timestamp": "20260519_144331",
+  "questions": [
+    {
+      "question": "Which of the following is an invalid variable name in Java?",
+      "answer": "1stPlace",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Java variables cannot start with a digit. They must start with a letter, an underscore (_), or a dollar sign ($).",
+      "options": [
+        "_myVariable",
+        "$price",
+        "1stPlace",
+        "studentScore"
+      ]
+    },
+    {
+      "question": "The 'String' data type in Java is considered a primitive data type.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "String is a non-primitive (reference) data type. Primitives include byte, short, int, long, float, double, char, and boolean.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "How many bytes of memory are allocated for a variable of type 'double'?",
+      "answer": "8",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "A double is a 64-bit (8-byte) primitive data type used for high-precision decimal numbers.",
+      "options": null
+    },
+    {
+      "question": "Which keyword is used to declare a constant variable that cannot be reassigned once initialized?",
+      "answer": "final",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "The 'final' keyword makes a variable a constant, meaning its value cannot be changed after its initial assignment.",
+      "options": [
+        "static",
+        "final",
+        "const",
+        "fixed"
+      ]
+    },
+    {
+      "question": "A static variable is shared among all instances of a class.",
+      "answer": "True",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Class variables (declared with the static keyword) are shared across all objects of that class rather than being unique to each instance.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "In the method signature 'public static void main(String[] args)', what does the keyword 'void' indicate?",
+      "answer": "The method does not return a value.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "'void' is a return type which signifies that the method performs an action but does not send any data back to the caller.",
+      "options": [
+        "The method is accessible from anywhere.",
+        "The method cannot be changed.",
+        "The method does not return a value.",
+        "The method is a class-level variable."
+      ]
+    },
+    {
+      "question": "Which scope refers to a variable declared inside a method that exists only while that method is executing?",
+      "answer": "Local",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Local variables are declared inside a method, constructor, or block and are only accessible within that specific context.",
+      "options": null
+    },
+    {
+      "question": "What is the result of trying to print a local variable that has been declared but not initialized?",
+      "answer": "A compilation error occurs.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "In Java, all local variables must be initialized (assigned a value) before they can be used or accessed in the code.",
+      "options": [
+        "It prints 0.",
+        "It prints null.",
+        "A compilation error occurs.",
+        "It prints a random memory address."
+      ]
+    },
+    {
+      "question": "If a Java file contains a public class named 'Payroll', the filename must be 'Payroll.java'.",
+      "answer": "True",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Java rules state that the name of a public class must exactly match the name of the source file, including case sensitivity.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "Which primitive data type is most appropriate for a variable that only needs to store the values 'true' or 'false'?",
+      "answer": "boolean",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "The boolean data type is a 1-bit size type designed specifically for logical true or false conditions.",
+      "options": null
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "subject": "Programming",
+  "timestamp": "20260520_002715",
+  "questions": [
+    {
+      "question": "What is the main difference between a compiler and an interpreter?",
+      "answer": "A compiler translates the entire source code into machine code before execution, while an interpreter translates and executes the code line-by-line during runtime.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Compilers translate the entire high-level program into machine code files (like .exe) before running it, which generally results in faster execution. Interpreters translate and execute the code line-by-line on the fly, which is slower but makes debugging easier.",
+      "options": [
+        "A compiler translates the entire source code into machine code before execution, while an interpreter translates and executes the code line-by-line during runtime.",
+        "A compiler is only used for high-level languages, while an interpreter is used exclusively for machine language.",
+        "An interpreter optimizes the code during compilation, whereas a compiler does not perform any optimization.",
+        "A compiler runs the program directly, whereas an interpreter requires an intermediate bytecode compilation step."
+      ]
+    },
+    {
+      "question": "In object-oriented programming, private fields of a base class are directly accessible by a derived (child) class.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Private fields are restricted to the class in which they are defined. To allow a derived class to access them directly, they must be declared as protected or public, or accessed via public/protected getter and setter methods.",
+      "options": []
+    },
+    {
+      "question": "What is the worst-case time complexity of searching for an element in a balanced binary search tree (BST)?",
+      "answer": "O(log n)",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "In a balanced binary search tree, the height of the tree is logarithmic relative to the number of nodes (n). Therefore, the worst-case search time complexity is O(log n).",
+      "options": []
+    },
+    {
+      "question": "Which of the following best describes the concept of 'polymorphism' in object-oriented programming?",
+      "answer": "The ability of different classes to respond to the same message or method call in their own unique way.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Polymorphism (meaning 'many forms') allows objects of different classes to be treated as objects of a common superclass, with each class implementing methods in its own specific way (e.g., method overriding).",
+      "options": [
+        "The process of hiding internal data and restricting direct access to an object's state.",
+        "The ability of different classes to respond to the same message or method call in their own unique way.",
+        "The mechanism of inheriting properties and behaviors from a parent class.",
+        "The technique of breaking a complex program down into smaller, reusable functions."
+      ]
+    },
+    {
+      "question": "HTTP is a stateful protocol because it inherently maintains connection state and session data between multiple requests from the same client.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "HTTP is a stateless protocol. Each request from a client is treated as an independent transaction, completely unrelated to any previous requests. State is managed externally using mechanisms like cookies, sessions, or tokens.",
+      "options": []
+    },
+    {
+      "question": "What is the primary purpose of the 'git merge' command in version control systems?",
+      "answer": "To combine multiple commit histories from different branches into a single branch.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "'git merge' integrates the changes and history from a target branch into your current active branch, resolving conflicts if they arise.",
+      "options": [
+        "To upload local repository changes to a remote hosting service.",
+        "To create a new, separate branch from the current HEAD commit.",
+        "To combine multiple commit histories from different branches into a single branch.",
+        "To revert the local working directory to match the last commit."
+      ]
+    },
+    {
+      "question": "What is the term used to describe a function that calls itself in its own definition?",
+      "answer": "recursion",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Recursion occurs when a function calls itself to solve smaller instances of the same problem. A recursive function must have a base case to terminate execution.",
+      "options": []
+    },
+    {
+      "question": "Which data structure operates on a Last-In, First-Out (LIFO) basis?",
+      "answer": "Stack",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "A Stack is a linear data structure that follows the LIFO principle, where the last element added is the first one to be removed (using push and pop operations).",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Hash Table"
+      ]
+    },
+    {
+      "question": "In relational databases, a primary key can contain null values as long as the other fields in the row are unique.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "By definition, a primary key must uniquely identify each record in a table and cannot contain NULL values. This ensures entity integrity.",
+      "options": []
+    },
+    {
+      "question": "What is the name of the automatic memory management process in programming languages that reclaims memory occupied by objects that are no longer in use?",
+      "answer": "garbage collection",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Garbage collection is an automatic memory management feature in languages like Java, C#, and Python that tracks allocated memory and automatically deallocates objects that are no longer reachable by the program.",
+      "options": []
+    }
+  ]
+}

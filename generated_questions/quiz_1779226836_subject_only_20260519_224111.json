@@ -1,0 +1,117 @@
+{
+  "subject": "Mathematics",
+  "timestamp": "20260519_224111",
+  "questions": [
+    {
+      "question": "Solve for x in the equation: 3x + 7 = 22.",
+      "answer": "5",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Subtract 7 from both sides of the equation to get 3x = 15. Then, divide both sides by 3 to find x = 5.",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "question": "A scalene triangle has at least two sides of equal length.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "By definition, a scalene triangle has three sides of completely different lengths. An isosceles triangle has at least two equal sides.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "Find the slope of the line passing through the points (2, 5) and (4, 11).",
+      "answer": "3",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "The slope formula is m = (y2 - y1) / (x2 - x1). Substituting the points, we get m = (11 - 5) / (4 - 2) = 6 / 2 = 3.",
+      "options": null
+    },
+    {
+      "question": "If two fair six-sided dice are rolled, what is the probability of getting a sum of 7?",
+      "answer": "1/6",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "There are 36 possible outcomes when rolling two dice. The pairs that sum to 7 are (1,6), (2,5), (3,4), (4,3), (5,2), and (6,1), which is a total of 6 outcomes. The probability is 6/36, which simplifies to 1/6.",
+      "options": [
+        "1/6",
+        "1/12",
+        "1/36",
+        "5/36"
+      ]
+    },
+    {
+      "question": "What are the roots of the quadratic equation x^2 - 5x + 6 = 0?",
+      "answer": "x = 2 and x = 3",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "The quadratic equation can be factored into (x - 2)(x - 3) = 0. Solving for x gives the roots x = 2 and x = 3.",
+      "options": [
+        "x = 2 and x = 3",
+        "x = -2 and x = -3",
+        "x = 1 and x = 6",
+        "x = -1 and x = -6"
+      ]
+    },
+    {
+      "question": "What is the value of sin(30 degrees) represented as a fraction?",
+      "answer": "1/2",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Using standard trigonometric ratios from a 30-60-90 special right triangle, the sine of 30 degrees is the ratio of the opposite side to the hypotenuse, which is 1/2.",
+      "options": null
+    },
+    {
+      "question": "The determinant of an identity matrix of any size is always equal to 1.",
+      "answer": "True",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "An identity matrix is a diagonal matrix where all entries on the main diagonal are 1. The determinant of a diagonal matrix is the product of its diagonal elements, which is always 1.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "If a jacket originally priced at $80 is on sale for 25% off, what is the sale price of the jacket?",
+      "answer": "$60",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "A 25% discount on $80 is calculated as 0.25 * 80 = $20. Subtracting the discount from the original price (80 - 20) yields the sale price of $60.",
+      "options": [
+        "$55",
+        "$60",
+        "$65",
+        "$70"
+      ]
+    },
+    {
+      "question": "Simplify the exponential expression: (2^3)^2 * 2^-4.",
+      "answer": "4",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Using exponent rules, (2^3)^2 becomes 2^6. Then, multiplying powers with the same base means adding exponents: 2^6 * 2^-4 = 2^(6 - 4) = 2^2 = 4.",
+      "options": null
+    },
+    {
+      "question": "In a right-angled triangle, if the hypotenuse is 13 cm and one of the legs is 5 cm, what is the length of the other leg?",
+      "answer": "12 cm",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Using the Pythagorean theorem (a^2 + b^2 = c^2), we have 5^2 + b^2 = 13^2, which simplifies to 25 + b^2 = 169. Solving for b^2 gives 144, so b = 12 cm.",
+      "options": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "15 cm"
+      ]
+    }
+  ]
+}

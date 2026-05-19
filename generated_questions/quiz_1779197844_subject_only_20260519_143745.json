@@ -1,0 +1,115 @@
+{
+  "subject": "Programming",
+  "timestamp": "20260519_143745",
+  "questions": [
+    {
+      "question": "Which Git command is used to save changes to the local repository with a descriptive message?",
+      "answer": "git commit",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "The 'git commit' command captures a snapshot of the project's currently staged changes. The -m flag is typically used to add a message explaining the changes.",
+      "options": [
+        "git push",
+        "git commit",
+        "git add",
+        "git save"
+      ]
+    },
+    {
+      "question": "In a stack data structure, elements are accessed in a First-In-First-Out (FIFO) manner.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Stacks follow the Last-In-First-Out (LIFO) principle. Queues follow the First-In-First-Out (FIFO) principle.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "What is the time complexity of searching for an element in a sorted array using the Binary Search algorithm?",
+      "answer": "O(log n)",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Binary search divides the search interval in half with each step, leading to a logarithmic time complexity of O(log n).",
+      "options": null
+    },
+    {
+      "question": "Which Object-Oriented Programming (OOP) concept refers to the ability of different classes to be treated as instances of the same class through inheritance, specifically regarding method overriding?",
+      "answer": "Polymorphism",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Polymorphism allows methods to do different things based on the object it is acting upon, even if they share the same name.",
+      "options": [
+        "Encapsulation",
+        "Abstraction",
+        "Polymorphism",
+        "Recursion"
+      ]
+    },
+    {
+      "question": "An Interpreted language is generally faster in execution than a Compiled language.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Compiled languages are translated into machine code before execution, making them generally faster than interpreted languages which are translated line-by-line during execution.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "What is the term for a function that calls itself within its own definition?",
+      "answer": "Recursion",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Recursion occurs when a function calls itself to solve smaller instances of the same problem, requiring a base case to prevent infinite loops.",
+      "options": null
+    },
+    {
+      "question": "Which of the following is a characteristic of a 'pure function' in functional programming?",
+      "answer": "It returns the same output for the same input and has no side effects.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Pure functions are deterministic and do not modify any state outside their scope, making code easier to test and reason about.",
+      "options": [
+        "It modifies global variables to save memory.",
+        "It returns different results each time it is called.",
+        "It returns the same output for the same input and has no side effects.",
+        "It must be defined inside a class structure."
+      ]
+    },
+    {
+      "question": "What does the 'DRY' principle stand for in software development?",
+      "answer": "Don't Repeat Yourself",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "DRY stands for 'Don't Repeat Yourself,' aimed at reducing repetition of software patterns and replacing it with abstractions.",
+      "options": null
+    },
+    {
+      "question": "In SQL, the 'JOIN' clause is used to combine rows from two or more tables based on a related column between them.",
+      "answer": "True",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "JOIN operations allow developers to query data from multiple tables by linking them through keys (e.g., Primary and Foreign keys).",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "Which data structure uses a 'key-value' pair system for highly efficient data retrieval?",
+      "answer": "Hash Table",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Hash tables (or Dictionaries/Maps) use a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.",
+      "options": [
+        "Linked List",
+        "Hash Table",
+        "Binary Tree",
+        "Stack"
+      ]
+    }
+  ]
+}

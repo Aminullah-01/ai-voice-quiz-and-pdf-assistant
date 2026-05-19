@@ -1,0 +1,26 @@
+{
+  "subject": "Computer Science",
+  "timestamp": "20260519_104804",
+  "questions": [
+    {
+      "question": "What is Unit 1: Introduction to data communication Data communication?",
+      "answer": "the exchange of data between a source and a receiver via form of transmission media such as a wire cable"
+    },
+    {
+      "question": "What is Data that have been altered in transmission and left uncorrected?",
+      "answer": "unusable"
+    },
+    {
+      "question": "What is Data delivered late?",
+      "answer": "useless"
+    },
+    {
+      "question": "What is In the case of video and audio, timely delivery?",
+      "answer": "delivering data as they are produced, in the same order that they are produced, and without significant dela y"
+    },
+    {
+      "question": "What is This kind of delivery?",
+      "answer": "called real -time transmission"
+    }
+  ]
+}

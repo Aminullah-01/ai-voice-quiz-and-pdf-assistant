@@ -1,0 +1,26 @@
+{
+  "subject": "ICT",
+  "timestamp": "20260519_122059",
+  "questions": [
+    {
+      "question": "What is 1 COS202 \u2013 Computer Programming II Links to Online Compiler Online Java Compiler - Programiz Online Java Compiler - online editor Java Type Casting Type casting?",
+      "answer": "converting one data type into another"
+    },
+    {
+      "question": "What is In Java, there?",
+      "answer": "two main types of casting: \uf0b7 Widening Casting (automatic) - converting a smaller type to a larger type size byte -> short -> char -> int -> long -> float -> double \uf0b7 Narrowing Casting (manual) - converting a larger type to a smaller type size double -> float -> long -> int -> char -> short -> byte Widening Casting Widening casting is done automatically when pa ssing a smaller size type into a larger size type"
+    },
+    {
+      "question": "What is This works because there?",
+      "answer": "no risk of losing information"
+    },
+    {
+      "question": "What is This?",
+      "answer": "required because narrowing may result in data loss (for example, dropping decimals when converting a double to an int): Example double myDouble = 9.78d; int myInt = (int) myDouble ; // Manual casting: double to int System.out.println(myDouble ); // Outputs 9.78 System.out.println(myInt); // Outputs 9 Real-Life Example Here is a real -life example of type casting"
+    },
+    {
+      "question": "What is We use type casting to make sure that the result?",
+      "answer": "a floating -point value, rather than an integer: Example // Set the maximum possible score in the game to 500 int maxScore = 500; 3 // The actual score of the user int userScore = 423; /* Calculate the percentage of the user's score in relation to the maximum available score"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "subject": "Computer Science",
+  "timestamp": "20260519_110944",
+  "questions": [
+    {
+      "question": "What is 1 COS 202: Compute r Programming II Course Manual Those?",
+      "answer": "fundamental concepts you should fully understand before going deeper into Java"
+    },
+    {
+      "question": "What is Variable Naming Rules (Identifiers) A variable?",
+      "answer": "a name that refers to a location in memory where data is stored"
+    },
+    {
+      "question": "What is \uf0b7 Case -sensitive \u2192 Age and age?",
+      "answer": "different variables"
+    },
+    {
+      "question": "What is \uf0b7 Use descriptive names \u2192 int numberOfStudents = 50;?",
+      "answer": "better than int n = 50;"
+    },
+    {
+      "question": "What is \u274c Bad Example: int 1age = 20; // \u274c Cannot start with a number int class = 10; // \u274c 'class'?",
+      "answer": "a reserved keyword \u2705 Good Example: int age = 20; String firstName = \"John\"; 2 2"
+    }
+  ]
+}

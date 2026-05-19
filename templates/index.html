@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Voice Quiz & PDF Learning Assistant</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="bg-orbs"></div>
+
+  <div class="app-layout">
+    <aside class="app-sidebar">
+      <div class="brand-block">
+        <div class="logo-mark">AI</div>
+        <div>
+          <div class="brand-title">AI Voice Quiz Assistant</div>
+          <div class="brand-subtitle">Powered by Gemini AI &amp; Firebase</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="nav-link" href="#dashboardSection"><i class="bi bi-grid-1x2"></i>Dashboard</a>
+        <a class="nav-link" href="#uploadSection"><i class="bi bi-cloud-arrow-up"></i>Upload</a>
+        <a class="nav-link" href="#quizSection"><i class="bi bi-lightning"></i>Quiz Session</a>
+        <a class="nav-link" href="#analyticsSection"><i class="bi bi-graph-up"></i>Analytics</a>
+        <a class="nav-link" href="#historySection"><i class="bi bi-clock-history"></i>History</a>
+        <a class="nav-link" href="#subjectsSection"><i class="bi bi-book"></i>Subjects</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="pill">CSC309 Final</div>
+        <div class="text-muted small">Build 2026.05</div>
+      </div>
+    </aside>
+
+    <div class="app-content">
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1 class="topbar-title">AI Voice Quiz &amp; PDF Learning Assistant</h1>
+          <p class="topbar-subtitle">Turn lecture notes into voice-powered quizzes in seconds.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="themeToggle" class="btn btn-outline-light" type="button">
+            <i class="bi bi-moon-stars"></i>
+            <span>Theme</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="app-shell">
+        <div id="alertArea" class="alert-stack"></div>
+
+        <section id="dashboardSection" class="dashboard-hero">
+          <div class="dashboard-header">
+            <div>
+              <h2 class="section-title">Overview</h2>
+              <p class="section-subtitle">Track performance, engagement, and AI insights.</p>
+            </div>
+            <span class="status-pill" id="subjectStatus">Subject: Computer Science</span>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card">
+              <div class="card-label">Total Quizzes</div>
+              <div class="card-value" id="totalQuizzes">0</div>
+              <div class="card-foot">All time</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-label">Average Score</div>
+              <div class="card-value" id="averageScore">0%</div>
+              <div class="card-foot">Last 10 quizzes</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-label">Best Subject</div>
+              <div class="card-value" id="strongestSubject">-</div>
+              <div class="card-foot">Top performer</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-label">Weakest Subject</div>
+              <div class="card-value" id="weakestSubject">-</div>
+              <div class="card-foot">Needs focus</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-label">Speech Accuracy</div>
+              <div class="card-value" id="speechAccuracyStat">-</div>
+              <div class="card-foot">Voice success</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="row g-4">
+          <section class="col-12 col-xl-8">
+        <!-- Subject Selection -->
+        <div class="glass-card mb-4" id="subjectsSection">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Subject Selection</h2>
+              <p class="section-subtitle">Choose a focus area to personalize your quiz.</p>
+            </div>
+          </div>
+          <div class="subject-picker">
+            <label for="subject" class="form-label">Select subject</label>
+            <select id="subject" class="form-select">
+              <option value="Computer Science">Computer Science</option>
+              <option value="Programming">Programming</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="ICT">ICT</option>
+              <option value="AI Basics">AI Basics</option>
+            </select>
+          </div>
+          <div class="subject-actions">
+            <input id="customSubjectInput" class="form-control" type="text" placeholder="Add custom subject" />
+            <button id="addSubjectBtn" class="btn btn-outline-light" type="button">Add Subject</button>
+          </div>
+        </div>
+
+        <!-- PDF Upload -->
+        <div class="glass-card mb-4" id="uploadCard">
+          <span id="uploadSection" class="section-anchor"></span>
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">PDF Upload</h2>
+              <p class="section-subtitle">Upload lecture notes to auto-generate questions.</p>
+            </div>
+            <span class="status-pill" id="uploadStatus">No file uploaded</span>
+          </div>
+          <div class="upload-area" id="uploadArea">
+            <div class="upload-illustration">
+              <i class="bi bi-file-earmark-pdf"></i>
+            </div>
+            <div>
+              <p class="upload-title">Select a PDF file</p>
+              <p class="upload-subtitle">Supported format: .pdf</p>
+            </div>
+            <input type="file" id="pdfUpload" accept=".pdf" />
+            <button id="uploadBtn" class="btn btn-primary" type="button">Upload PDF</button>
+          </div>
+          <div class="upload-progress">
+            <div class="progress" role="progressbar" aria-label="Upload progress">
+              <div class="progress-bar" id="uploadProgressBar" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="file-preview">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-file-earmark-text"></i>
+              <span id="uploadFileName">No file selected</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div id="uploadSpinner" class="spinner-border spinner-border-sm text-primary d-none" role="status">
+                <span class="visually-hidden">Uploading...</span>
+              </div>
+              <span id="uploadMessage">Waiting for file...</span>
+            </div>
+          </div>
+          <div class="loading-overlay">
+            <div class="skeleton" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <!-- Quiz Generation -->
+        <div class="glass-card mb-4" id="quizSection">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Quiz Generation</h2>
+              <p class="section-subtitle">Generate a fresh quiz using AI insights.</p>
+            </div>
+            <span class="status-pill" id="quizStatus">Ready to generate</span>
+          </div>
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <label for="difficulty" class="form-label mb-0">Difficulty</label>
+            <select id="difficulty" class="form-select difficulty-select">
+              <option value="Easy">Easy</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Hard">Hard</option>
+            </select>
+            <button id="generateQuizBtn" class="btn btn-dark" type="button">Generate Quiz</button>
+            <div class="spinner-border text-primary d-none" id="quizSpinner" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <span class="text-muted" id="quizStatusText">Awaiting PDF or subject selection.</span>
+          </div>
+        </div>
+
+        <!-- Quiz Area -->
+        <div class="glass-card quiz-card" id="quizSessionCard">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Voice Quiz Session</h2>
+              <p class="section-subtitle">Answer out loud and get instant feedback.</p>
+            </div>
+            <span class="status-pill" id="scorePill">Score: 2/5</span>
+          </div>
+
+          <div class="question-box">
+            <h3 id="currentQuestion">What does CPU stand for?</h3>
+            <p class="text-muted" id="questionHint">Question 1 of 5</p>
+            <div class="timer-pill" id="timerDisplay">Time left: 30s</div>
+          </div>
+
+          <div class="voice-controls">
+            <button id="micBtn" class="mic-button" aria-label="Microphone" type="button">
+              <i class="bi bi-mic-fill"></i>
+            </button>
+            <div class="d-flex flex-wrap gap-2">
+              <button id="startRecording" class="btn btn-success" type="button">Start Recording</button>
+              <button id="stopRecording" class="btn btn-outline-danger" type="button" disabled>Stop Recording</button>
+            </div>
+          </div>
+          <div class="recording-row">
+            <div id="recordingStatus" class="recording-status">Recording: Idle</div>
+            <div id="recordingTimer" class="recording-timer">00:00</div>
+          </div>
+          <div class="waveform" id="waveform">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="transcript-area">
+            <h4 class="mini-title">Transcript</h4>
+            <div id="transcript" class="placeholder-box">Your speech will appear here.</div>
+          </div>
+
+          <div class="feedback-area">
+            <h4 class="mini-title">Answer Feedback</h4>
+            <div id="feedback" class="placeholder-box">Feedback will appear after evaluation.</div>
+          </div>
+
+          <div id="evaluationCard" class="evaluation-card">
+            <div class="evaluation-header">
+              <div class="evaluation-title">Evaluation Result</div>
+              <span id="correctnessBadge" class="badge-pill">Waiting</span>
+            </div>
+            <div id="evaluationText" class="evaluation-text">Awaiting your answer.</div>
+          </div>
+
+          <div class="ai-feedback">
+            <div class="ai-panel">
+              <h4 class="mini-title">AI Explanation</h4>
+              <div id="aiExplanation" class="placeholder-box">Explanation will appear here.</div>
+            </div>
+            <div class="ai-panel">
+              <h4 class="mini-title">Improvement Suggestion</h4>
+              <div id="aiSuggestion" class="placeholder-box">Suggestions will appear here.</div>
+            </div>
+            <div class="ai-panel">
+              <h4 class="mini-title">Confidence</h4>
+              <div id="aiConfidence" class="placeholder-box">0%</div>
+            </div>
+          </div>
+          <div class="ai-feedback ai-secondary">
+            <div class="ai-panel">
+              <h4 class="mini-title">Learning Recommendation</h4>
+              <div id="learningRecommendation" class="placeholder-box">Recommendations will appear here.</div>
+            </div>
+          </div>
+
+          <div class="answer-area">
+            <h4 class="mini-title">Your Answer</h4>
+            <div id="answerOptions" class="answer-options"></div>
+            <input id="answerInput" class="form-control answer-input" type="text" placeholder="Type your answer" />
+            <button id="submitAnswer" class="btn btn-outline-light" type="button">Submit Answer</button>
+          </div>
+
+          <div class="quiz-list-section">
+            <h4 class="mini-title">Generated Quiz</h4>
+            <div id="quizContainer" class="quiz-list">
+              <div class="quiz-item">
+                <div class="quiz-item-question">What does CPU stand for?</div>
+                <div class="quiz-item-answer">Central Processing Unit</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <span id="scoreDisplay" class="score-display">Score: 2/5</span>
+            <button id="nextQuestion" class="btn btn-primary" type="button">Next Question</button>
+          </div>
+          <div id="completionCard" class="completion-card is-hidden">
+            <h3>Quiz Complete!</h3>
+            <p id="completionSummary">You completed the quiz.</p>
+            <button id="restartQuiz" class="btn btn-outline-light" type="button">Restart Quiz</button>
+          </div>
+          <div class="loading-overlay">
+            <div class="skeleton" style="width: 80%"></div>
+          </div>
+        </div>
+      </section>
+
+          <aside class="col-12 col-xl-4">
+            <div class="glass-card stats-card mb-4" id="analyticsSection">
+              <h2 class="section-title">Performance Analytics</h2>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Latest Score</span>
+                  <span class="stat-value" id="latestScore">-</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Subject</span>
+                  <span class="stat-value" id="latestSubject">-</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Average Response</span>
+                  <span class="stat-value" id="avgResponse">-</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Speech Accuracy</span>
+                  <span class="stat-value" id="speechAccuracy">-</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Trend</span>
+                  <span class="stat-value" id="performanceTrend">-</span>
+                </div>
+              </div>
+              <div class="export-actions">
+                <button id="exportJson" class="btn btn-outline-light" type="button">Export JSON</button>
+                <button id="exportPdf" class="btn btn-outline-light" type="button" disabled>Export PDF</button>
+              </div>
+            </div>
+
+            <div class="glass-card stats-card mb-4" id="historySection">
+              <h2 class="section-title">Recent Quiz History</h2>
+              <div id="quizHistory" class="history-list">Loading history...</div>
+            </div>
+
+            <div class="glass-card stats-card mb-4">
+              <h2 class="section-title">Subject Performance</h2>
+              <div id="subjectList" class="history-list">Loading subjects...</div>
+            </div>
+
+            <div class="glass-card stats-card mb-4">
+              <h2 class="section-title">Smart Recommendations</h2>
+              <div id="recommendations" class="history-list">
+                <div class="history-card">Upload a PDF to unlock AI study tips.</div>
+              </div>
+            </div>
+
+            <div class="glass-card stats-card">
+              <h2 class="section-title">Quiz Statistics</h2>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Total Questions</span>
+                  <span class="stat-value" id="totalQuestions">5</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Correct Answers</span>
+                  <span class="stat-value" id="correctAnswers">2</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Progress</span>
+                  <span class="stat-value" id="quizProgress">40%</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Subject</span>
+                  <span class="stat-value" id="subjectDisplay">Computer Science</span>
+                </div>
+              </div>
+              <div class="progress mt-3" role="progressbar" aria-label="Quiz progress">
+                <div class="progress-bar" id="quizProgressBar" style="width: 40%"></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="analytics-grid" id="analyticsChartsSection">
+          <div class="glass-card">
+            <h2 class="section-title">Score Trends</h2>
+            <canvas id="scoreTrendChart" height="160"></canvas>
+          </div>
+          <div class="glass-card">
+            <h2 class="section-title">Quiz Completion</h2>
+            <canvas id="completionChart" height="160"></canvas>
+          </div>
+          <div class="glass-card">
+            <h2 class="section-title">Strongest vs Weakest Topics</h2>
+            <canvas id="topicChart" height="160"></canvas>
+          </div>
+          <div class="glass-card">
+            <h2 class="section-title">AI Evaluation History</h2>
+            <canvas id="aiHistoryChart" height="160"></canvas>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <div>AI Voice Quiz Assistant</div>
+        <div class="text-muted">Powered by Gemini AI &amp; Firebase</div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

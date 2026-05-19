@@ -1,0 +1,26 @@
+{
+  "subject": "Computer Science",
+  "timestamp": "20260519_104656",
+  "questions": [
+    {
+      "question": "What is CSC 309: Artificial Intelligence Ali Ahmad Aminu , PhD Computer Science Department, Gombe State University 2025 /2026 Session Week 3 : Constraint Satisfaction Problems (CSPs) Week 3: Outline \u2022Constraint Satisfaction Problems (CSPs) \u2022Backtracking Search for CSPs \u2022Local Search for CSPs Week 3: Outline \u2022Constraint Satisfaction Problems (CSPs) \u2022Backtracking Search for CSPs \u2022Local Search for CSPs Constraint Satisfaction Problems (CSPs) \u2022What?",
+      "answer": "a CSP ?"
+    },
+    {
+      "question": "What is \u2022CSP?",
+      "answer": "a problem defined through a set of variables, a set of domains and constraints \u2022variables can have possible values specified by the problem \u2022domains specify the possible values for each variable \u2022constraints describe allowable combinations of values for a subset of the variables \u2022State in a CSP \u2022defined by an assignment of values to some or all variables \u2022Consistent assignment : assignment does not violate the constraints \u2022An assignment is complete when every value is mentioned \u2022Solution to a CSP \u2022A solution to a CSP is a complete assignment that satisfies all constraints"
+    },
+    {
+      "question": "What is \u2022must assign values to all variables \u2022must satisfy all constraints 5 CSP Approach \u2022The goal test?",
+      "answer": "decomposed into a set of constraints on variables \u2022checks for violation of constraints before new nodes are generated \u2022must backtrack if constraints are violated \u2022forward -checking looks ahead to detect unsolvability \u2022based on the current values of constraint variables 7 CSP Example: Map Coloring \u2022Color a map with three colors so that adjacent countries have different colors G FEDC BA?"
+    },
+    {
+      "question": "What is ??variables: A, B, C, D, E, F, G values: {red, green, blue} constraints: \u201cno neighboring regions have the same color\u201d 8 CSP Example: Map Coloring \u2022Solutions?",
+      "answer": "assignments satisfying all constraints, \u2022 e.g"
+    },
+    {
+      "question": "What is {A=green, B=red, C=blue, D=blue, E=green, F=blue, G=green} G FEDC BA 9 Constraint Graph \u2022Visual representation of a CSP \u2022variables?",
+      "answer": "nodes \u2022arcs are constraints G F E DC BA The map coloring example represented as constraint graph"
+    }
+  ]
+}

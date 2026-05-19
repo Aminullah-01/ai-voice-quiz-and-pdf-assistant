@@ -1,0 +1,120 @@
+{
+  "subject": "AI Basics",
+  "timestamp": "20260519_224316",
+  "questions": [
+    {
+      "question": "Which of the following best describes the difference between Narrow AI and General AI?",
+      "answer": "Narrow AI is designed for a specific task, while General AI possesses the ability to understand, learn, and apply knowledge across any intellectual task.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Narrow (or Weak) AI is programmed to perform a single, specific task (such as facial recognition or web search). General (or Strong) AI is a theoretical form of AI where the machine possesses cognitive capabilities functionally equal to a human.",
+      "options": [
+        "Narrow AI can perform any intellectual task a human can, while General AI is limited to a specific task.",
+        "Narrow AI is designed for a specific task, while General AI possesses the ability to understand, learn, and apply knowledge across any intellectual task.",
+        "Narrow AI requires no data to train, whereas General AI relies solely on deep learning.",
+        "Narrow AI refers to machine learning, while General AI refers strictly to rule-based systems."
+      ]
+    },
+    {
+      "question": "In supervised machine learning, the algorithm learns from a dataset that contains both the input data and the corresponding correct output labels.",
+      "answer": "True",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Supervised learning involves training a model on a labeled dataset, which means every training example is paired with its correct output label.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "What is the primary function of an activation function in an artificial neural network?",
+      "answer": "To introduce non-linearity into the network, allowing it to learn complex patterns.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Without non-linear activation functions (like ReLU or Sigmoid), a neural network, no matter how many layers it has, would behave just like a single-layer linear regression model.",
+      "options": [
+        "To normalize the input data before it enters the network.",
+        "To introduce non-linearity into the network, allowing it to learn complex patterns.",
+        "To calculate the final error of the network during backpropagation.",
+        "To store the weights and biases of each neuron."
+      ]
+    },
+    {
+      "question": "What is the term for the process of training a machine learning model where an agent learns to make decisions by performing actions and receiving rewards or penalties?",
+      "answer": "Reinforcement Learning",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Reinforcement learning is an area of machine learning concerned with how intelligent agents ought to take actions in an environment to maximize some notion of cumulative reward.",
+      "options": null
+    },
+    {
+      "question": "Which of the following techniques is commonly used in Natural Language Processing (NLP) to reduce words to their base or dictionary form?",
+      "answer": "Lemmatization",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Lemmatization is the process of grouping together the inflected forms of a word so they can be analyzed as a single item, identified by the word's lemma (dictionary form), unlike stemming which simply chops off word endings.",
+      "options": [
+        "Tokenization",
+        "Lemmatization",
+        "Vectorization",
+        "Parsing"
+      ]
+    },
+    {
+      "question": "Deep learning is a subfield of machine learning that is based on artificial neural networks with multiple layers.",
+      "answer": "True",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Deep learning utilizes deep neural networks\u2014networks with many layers (hence the term 'deep')\u2014to extract progressively higher-level features from raw input.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "In the context of evaluating a machine learning classification model, what term refers to the proportion of actual positive cases that were correctly identified by the model?",
+      "answer": "Recall",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Recall (also known as sensitivity) measures the ability of a model to find all the relevant cases within a dataset. It is calculated as True Positives divided by the sum of True Positives and False Negatives.",
+      "options": null
+    },
+    {
+      "question": "What machine learning problem occurs when a model learns the training data too well, including its noise and outliers, leading to poor generalization on new, unseen data?",
+      "answer": "Overfitting",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Overfitting occurs when a model is overly complex and fits the training data too closely, making it unable to perform accurately on new datasets.",
+      "options": [
+        "Underfitting",
+        "Overfitting",
+        "Regression",
+        "Dimensionality Reduction"
+      ]
+    },
+    {
+      "question": "Unsupervised learning requires a human expert to manually label every data point before the algorithm can process it.",
+      "answer": "False",
+      "type": "true_false",
+      "difficulty": "Medium",
+      "explanation": "Unsupervised learning algorithms find hidden patterns, groupings, or intrinsic structures in input data without any pre-existing human-provided labels.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "In a neural network, what is the purpose of the backpropagation algorithm?",
+      "answer": "To adjust the weights of the network by calculating the gradient of the loss function.",
+      "type": "multiple_choice",
+      "difficulty": "Medium",
+      "explanation": "Backpropagation is short for 'backward propagation of errors.' It is an algorithm used to train neural networks by calculating the gradient of the loss function with respect to the weights, allowing optimization methods like gradient descent to update the weights.",
+      "options": [
+        "To generate random weights for the network during initialization.",
+        "To pass inputs forward through the network to make a prediction.",
+        "To adjust the weights of the network by calculating the gradient of the loss function.",
+        "To visualize the decision boundary of the classifier."
+      ]
+    }
+  ]
+}

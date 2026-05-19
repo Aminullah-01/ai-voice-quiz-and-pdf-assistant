@@ -1,0 +1,26 @@
+{
+  "subject": "Computer Science",
+  "timestamp": "20260519_104554",
+  "questions": [
+    {
+      "question": "What is This presentation uses a free template provided by FPPT.com www.free -power -point -templates.comCSC 309: Artificial Intelligence Ali Ahmad Aminu , PhD Computer Science Department, Gombe State University 2025/2026 Session This presentation uses a free template provided by FPPT.com www.free -power -point -templates.comWeek 4 : Rule Based System and Expert System This presentation uses a free template provided by FPPT.com www.free -power -point -templates.comWeek 4: Outline \u2022Rules for knowledge representation \u2022Rule Based (Production) System \u2022Definition \u2022Main components \u2022Rule Execution Cycle \u2022Conflict resolution \u2022Applications \u2022Expert System This presentation uses a free template provided by FPPT.com www.free -power -point -templates.comRules for Knowledge Representation \u2022Rules?",
+      "answer": "used as one way to represent knowledge"
+    },
+    {
+      "question": "What is \u2022Rules?",
+      "answer": "expressed in the following form: If <conditions> then <conclusion> Example: If temperature is below 10 then weather is cold 4Then -pattern, Conclusion or ConsequentIf-pattern, Premise Or Antecedent This presentation uses a free template provided by FPPT.com www.free -power -point -templates.comRules for Knowledge Representation \u2022Rules are usually expressed in the form of IF"
+    },
+    {
+      "question": "What is statements, such as: \u2022 IF A THEN B \u2022A?",
+      "answer": "called the antecedent and B is the consequent in this statement This can be considered to have a similar logical meaning as the following: \u2022 A \u2192 B \u2022In expressing rules, the consequent usually takes the form of an action or a conclusion"
+    },
+    {
+      "question": "What is This presentation uses a free template provided by FPPT.com www.free -power -point -templates.comRules for Knowledge Representation \u2022Generally, a rule can have: \u2022more than one antecedent, usually combined either by AND or by OR connective \u2022more than one consequent, which usually suggests that there?",
+      "answer": "multiple actions to be taken"
+    },
+    {
+      "question": "What is \u2022For example, suitable antecedents in a rule might be: IF x > 3 IF name?",
+      "answer": "\u201cBob\u201d IF weather is cold \u2022 Here, the objects being considered are x, name, and weather; the operators are \u201c>\u201d and \u201cis\u201d, and the values are 3, \u201cBob,\u201d and cold"
+    }
+  ]
+}

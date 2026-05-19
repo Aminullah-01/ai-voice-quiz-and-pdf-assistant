@@ -1,0 +1,76 @@
+{
+  "subject": "Computer Science",
+  "timestamp": "20260519_133250",
+  "questions": [
+    {
+      "question": "What is Subject?",
+      "answer": "Subject is related to Computer Science.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Computer?",
+      "answer": "Computer is related to Computer Science.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Science?",
+      "answer": "Science is related to Computer Science.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is Generate?",
+      "answer": "Generate is related to Computer Science.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "What is General?",
+      "answer": "General is related to Computer Science.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Review the lecture notes for details."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    },
+    {
+      "question": "Explain a key concept from Computer Science.",
+      "answer": "Provide a brief explanation based on the notes.",
+      "type": "short_answer",
+      "difficulty": "Medium",
+      "explanation": "Use the PDF content to craft your answer."
+    }
+  ]
+}
